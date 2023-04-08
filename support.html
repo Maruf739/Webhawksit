@@ -11,7 +11,15 @@
       <!-- Styles -->
       <link href="css/style.css" rel="stylesheet">
       <!-- Scripts -->
-      <script src="js/app.js" defer=""></script>
+      <!-- <script src="js/app.js" defer=""></script> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+ <!-- Styles -->
+ <link href="css/app.css" rel="stylesheet">
+ <!-- Scripts -->
+ <!-- <script src="js/app.js" defer=""></script> -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ </script>
       <title>Support | webhawksit</title>
    </head>
    <body style="height: auto;">
@@ -63,68 +71,25 @@
                      </div>
                   </div>
                </section>
-               <!-- <section class="hawks-servent">
+               <section class="hawks-servent">
                   <div class="container">
                      <div class="row">
                         <div class="col-12">
                            <div class="slider support-slider-active">
-                              <div>
-                                 <span id="carousel_prev_1acnlgali25" style="display: none;"></span> 
-                                 <div id="carousel_ivw711csd39" class="owl-carousel owl-theme owl-loaded owl-drag">
-                                    <div class="owl-stage-outer">
-                                       <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1665px;">
-                                          <div class="owl-item active" style="width: 277.5px;">
-                                             <div class="pro-item slide1">
-                                                <div class="slide-wrapper">
-                                                   <div class="slide-content pt-15"><img src="/images/shutterstock.png" alt="" class="mt-40"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="owl-item active" style="width: 277.5px;">
-                                             <div class="pro-item slide2">
-                                                <div class="slide-wrapper">
-                                                   <div class="slide-content pt-15"><img src="/images/D3Q05opXsAIQaip@2x.png" alt="" class="mt-40"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="owl-item active" style="width: 277.5px;">
-                                             <div class="pro-item slide3">
-                                                <div class="slide-wrapper">
-                                                   <div class="slide-content pt-15"><img src="/images/Data-Center-1024x633@2x.png" alt="" class="mt-40"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="owl-item active" style="width: 277.5px;">
-                                             <div class="pro-item slide4">
-                                                <div class="slide-wrapper">
-                                                   <div class="slide-content pt-15"><img src="/images/NetworkSwitches@2x.png" alt="" class="mt-40"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="owl-item" style="width: 277.5px;">
-                                             <div class="pro-item slide5">
-                                                <div class="slide-wrapper">
-                                                   <div class="slide-content pt-15"><img src="/images/Data-Center-1024x633@2x.png" alt="" class="mt-40"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="owl-item" style="width: 277.5px;">
-                                             <div class="pro-item slide6">
-                                                <div class="slide-wrapper">
-                                                   <div class="slide-content pt-15"><img src="/images/D3Q05opXsAIQaip@2x.png" alt="" class="mt-40"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="owl-nav disabled">
-                                       <div class="owl-prev">next</div>
-                                       <div class="owl-next">prev</div>
-                                    </div>
-                                    <div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>
-                                 </div>
-                                 <span id="carousel_next_6u9z51kjevr"></span>
-                              </div>
+                              <div class="row mt-50">
+                        <div class="col-12">
+                          <div class="slider">
+                            <div id="carousel1" class="owl-carousel owl-theme">
+            <div class="item"><img src="images/servnet/D3Q05opXsAIQaip@2x.png" alt="" style="height:150px" width="222px"></div>
+            <div class="item"><img src="images/servnet/Data-Center-1024x633@2x.png" alt=""style="height:170px"   width="222px"></div>
+            <div class="item"><img src="images/servnet/NetworkSwitches@2x.png" alt=""style="height:150px"   width="222px"></div>
+            <div class="item"><img src="images/servnet/shutterstock.png" alt="" style="height:150px"  width="222px"></div>
+            <div class="item"><img src="images/servnet/D3Q05opXsAIQaip@2x.png" alt="" style="height:150px"  width="222px"></div>
+            <div class="item"><img src="images/servnet/Data-Center-1024x633@2x.png" alt="" style="height:170px"  width="222px"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                            </div>
                         </div>
                      </div>
@@ -134,7 +99,7 @@
                         </div>
                      </div>
                   </div>
-               </section> -->
+               </section>
                <section class="bandwidth">
                   <div class="container">
                      <div class="row">
@@ -328,5 +293,36 @@
          </section>
          <div></div>
       </div>
+       <!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- Owl Carousel JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+	<script>
+        $(document).ready(function(){
+            $("#carousel1").owlCarousel({
+                items: 5, // Number of items to show
+                loop: true, // Infinite loop
+                margin: 10, // Space between items
+                nav: true, // Show navigation buttons
+                dots: true, // Show dots navigation
+                autoplay: false, // Autoplay
+                autoplayTimeout: 5000 // Autoplay interval in milliseconds
+            });
+			$("#carousel2").owlCarousel({
+                items: 5, // Number of items to show
+                loop: true, // Infinite loop
+                margin: 10, // Space between items
+                nav: true, // Show navigation buttons
+                dots: true, // Show dots navigation
+                autoplay: false, // Autoplay
+                autoplayTimeout: 5000 // Autoplay interval in milliseconds
+            });
+        });
+    </script>
+    
+<!-- Add the Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    </body>
 </html>
