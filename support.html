@@ -12,14 +12,16 @@
       <link href="css/style.css" rel="stylesheet">
       <!-- Scripts -->
       <!-- <script src="js/app.js" defer=""></script> -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
  <!-- Styles -->
  <link href="css/app.css" rel="stylesheet">
  <!-- Scripts -->
  <!-- <script src="js/app.js" defer=""></script> -->
- <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+      
       <title>Support | webhawksit</title>
    </head>
    <body style="height: auto;">
@@ -73,13 +75,13 @@
                </section>
                <section class="hawks-servent">
                   <div class="container">
-                     <div class="row">
+                     <!-- <div class="row">
                         <div class="col-12">
                            <div class="slider support-slider-active">
                               <div class="row mt-50">
                         <div class="col-12">
                           <div class="slider">
-                            <div id="carousel1" class="owl-carousel owl-theme">
+                            <div id="carousel" class="owl-carousel owl-theme">
             <div class="item"><img src="images/servnet/D3Q05opXsAIQaip@2x.png" alt="" style="height:150px" width="222px"></div>
             <div class="item"><img src="images/servnet/Data-Center-1024x633@2x.png" alt=""style="height:170px"   width="222px"></div>
             <div class="item"><img src="images/servnet/NetworkSwitches@2x.png" alt=""style="height:150px"   width="222px"></div>
@@ -92,7 +94,21 @@
                       </div>
                            </div>
                         </div>
-                     </div>
+                     </div> -->
+                     <div class="row mt-50">
+                        <div class="col-12">
+                          <div class="slider">
+                            <div id="carousel1" class="owl-carousel owl-theme">
+            <div class="item"><img src="images/servnet/D3Q05opXsAIQaip@2x.png" alt="" style="height:150px" width="222px"></div>
+            <div class="item"><img src="images/servnet/Data-Center-1024x633@2x.png" alt=""style="height:170px" width="222px"></div>
+            <div class="item"><img src="images/servnet/NetworkSwitches@2x.png" alt=""style="height:150px" width="222px"></div>
+            <div class="item"><img src="images/servnet/shutterstock.png" alt="" style="height:150px" width="222px"></div>
+            <div class="item"><img src="images/servnet/D3Q05opXsAIQaip@2x.png" style="height:150px" width="222px"></div>
+            <div class="item"><img src="images/servnet/Data-Center-1024x633@2x.png" alt="" style="height:170px" width="222px"></div>
+          </div>
+                          </div>
+                        </div>
+                      </div>
                      <div class="row">
                         <div class="col-12">
                            <h2>Hawks Servnet</h2>
@@ -295,6 +311,7 @@
       </div>
        <!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 	<!-- Owl Carousel JS -->
 	
@@ -302,27 +319,19 @@
 	<script>
         $(document).ready(function(){
             $("#carousel1").owlCarousel({
-                items: 5, // Number of items to show
+                items: 4, // Number of items to show
                 loop: true, // Infinite loop
                 margin: 10, // Space between items
-                nav: true, // Show navigation buttons
+                nav: false, // Show navigation buttons
                 dots: true, // Show dots navigation
                 autoplay: false, // Autoplay
                 autoplayTimeout: 5000 // Autoplay interval in milliseconds
             });
-			$("#carousel2").owlCarousel({
-                items: 5, // Number of items to show
-                loop: true, // Infinite loop
-                margin: 10, // Space between items
-                nav: true, // Show navigation buttons
-                dots: true, // Show dots navigation
-                autoplay: false, // Autoplay
-                autoplayTimeout: 5000 // Autoplay interval in milliseconds
-            });
+			
         });
     </script>
     
 <!-- Add the Bootstrap JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    </body>
 </html>
